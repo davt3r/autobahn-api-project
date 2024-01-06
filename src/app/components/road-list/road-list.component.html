@@ -1,0 +1,18 @@
+<!-- road-list.component.html -->
+
+<div class="title-container">
+  <h2>Road List</h2>
+</div>
+<div class="road-list">
+  <div *ngFor="let road of roads" class="road-card">
+    <h2 >{{ road.roadId }}</h2>
+    <div class="road-details">
+      <p><i class="fas fa-tools"></i> Roadworks: {{ road.roadworksCount }}</p>
+      <p><i class="fas fa-video"></i> Webcams: {{ road.webcamsCount }}</p>
+      <p><i class="fas fa-truck"></i> Lorries: {{ road.parkingLorriesCount }}</p>
+      <p><i class="fas fa-exclamation-triangle"></i> Warnings: {{ road.warningsCount }}</p>
+      <p><i class="fa-solid fa-x"></i> Closures: {{ road.closuresCount }}</p>
+      <p><i class="fas fa-charging-station"></i> Electric Charging Stations: {{ road.electricChargingStationsCount }}</p>
+    </div>
+  </div>
+</div>

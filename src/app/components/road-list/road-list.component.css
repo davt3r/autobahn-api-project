@@ -1,0 +1,46 @@
+
+.road-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content:center;
+  
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; 
+}
+
+h2 {
+  font-size: 24px; 
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+
+
+.road-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.road-card:hover {
+  transform: scale(1.05);
+}
+
+.road-card h2 {
+  margin-bottom: 8px;
+}
+
+.road-details {
+  font-size: 14px;
+}
+
+
